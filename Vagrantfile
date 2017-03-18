@@ -8,5 +8,6 @@ Vagrant.configure("2") do |config|
     chef.validation_key_path = ".chef/muthulaksh.pem"
     chef.validation_client_name = "muthulaksh"
     chef.node_name = "centos-server"
+    chef.add_recipe "logrotate::logrotate"
   end
 end
